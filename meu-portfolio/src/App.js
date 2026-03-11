@@ -21,17 +21,18 @@ function App() {
         </ul>
       </nav>
 
-      <section id="home" className="section home">
-        <div className="hero-content">
-          <h1>Oi!</h1>
-          <h2>Eu sou Quezia Costa</h2>
+      <section id="home" className="home">
+          <div className="home-text">
+            <h1>Oi!</h1>
+            <h2>Eu sou Quezia Costa</h2>
+          </div>
 
-          <img
-            src=""
-            alt="Foto de Quezia"
-            className="profile-img"
-          />
-        </div>
+          <div className="home-image">
+            <img
+              src="/imagens/MINHAFOTO.png"
+              alt="Ilustração de Quezia"
+            />
+          </div>
       </section>
 
       <section id="sobre" className="section sobre">
@@ -41,10 +42,10 @@ function App() {
         <img src="" alt="Foto perfil" className="profile-img"/>
 
         <ul className="sobre-lista">
-          <li>Cientista da Computação em formação | previsão 2027.2</li>
+          <li>Cientista da Computação em formação | previsão de formação para 2027.2</li>
           <li>Estudante de Iniciação Científica</li>
           <li>Ex-monitora de Cálculo 1</li>
-          <li>Desenvolvedora Web</li>
+          <li>Desenvolvedora Web nas horas vagas</li>
           <li>Palestrante</li>
           <li>Entusiasta em Ciência de Dados</li>
         </ul>

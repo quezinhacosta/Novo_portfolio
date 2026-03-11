@@ -27,8 +27,6 @@ body{
   width:100%;
 }
 
-/* ================= MENU ================= */
-
 .navbar{
   position:fixed;
   top:0;
@@ -51,8 +49,6 @@ body{
   color:black;
 }
 
-/* links */
-
 .nav-links{
   list-style:none;
   display:flex;
@@ -70,14 +66,11 @@ body{
   opacity:0.7;
 }
 
-/* icone */
 
 .nav-icon{
   width:28px;
   height:28px;
 }
-
-/* ================= SECTIONS ================= */
 
 .section{
   min-height:100vh;
@@ -85,21 +78,44 @@ body{
   text-align:center;
 }
 
-/* ================= HOME ================= */
 
-.hero-content h1{
-  font-size:40px;
+.home {
+  background-color:rgb(4, 4, 5);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
-.hero-content h2{
-  font-size:28px;
-  margin-top:10px;
+.home-text {
+  width: 50%;
+  padding-left: 80px;
 }
 
-.profile-img{
-  width:180px;
-  border-radius:50%;
-  margin-top:25px;
+.home-text h1 {
+  font-size: 3rem;
+  color: #ffffffc2;
+  
+}
+
+.home-text h2 {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  
+}
+.home-image {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home-image img {
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
 }
 
 /* ================= SOBRE ================= */
