@@ -65,19 +65,81 @@ function App() {
         <div className="cards-container">
 
           <div className="card">
-            <h3>Iniciação Científica</h3>
+            <h3>Iniciação Científica - Bolsista</h3>
             <p>
-              Pesquisa voltada para desenvolvimento de soluções tecnológicas
-              para pessoas com dislexia utilizando inteligência artificial.
+              Pesquisa voltada para desenvolvimento de softwares de auxilio
+              para crianças com dislexia utilizando inteligência artificial.
+              O PIBIC conta a leitura e estudo de periodicos, estudo cientifico, produção de artigo de revisão, 
             </p>
           </div>
 
           <div className="card">
-            <h3>Desenvolvimento Web</h3>
+            <h3>Projeto voluntário</h3>
             <p>
-              Desenvolvimento de aplicações web utilizando HTML, CSS,
-              JavaScript e React.
+              Organizar o site oficial da igreja batista central do Carpina. O site contou com HTML, CSS, JS e responsividade.
             </p>
+          </div>
+
+          <div className='card'>
+            <h3>Estrutura de cados</h3>
+            <p>Projeto em C para reforçar manipulação de arquivos e dados acadêmicos.</p>
+          </div>
+
+          <div className='card'>
+            <h3>Layout da página inicial do Google</h3>
+            <p>Layout desenvolvido para fins educacionais na semana da computação.</p>
+          </div>
+
+          <div className='card'>
+            <h3>Palestra na semana da computação na UNICAP</h3>
+
+          </div>
+
+          <div className='card'> 
+            <h3> Palestra para a comunidade Front-end do Recife</h3>
+
+          </div>
+
+          <div className='card'>
+            <h3>Python/Excel</h3>
+            <p>Aplicação que utiliza Python para análises de palavras originais e derivadas a partir de comparações.</p>
+          </div>
+
+          <div className='card'>
+            <h3>Stonks Viewer</h3>
+            <p>Aplicação web que utiliza Python e React para fornecer análises de ações baseadas em dados históricos e aprendizado de máquina.</p>
+          </div>
+
+          <div className='card'>
+            <h3>Labirinto dos Mistérios</h3>
+            <p>Jogo feito completamente em Java.</p>
+          </div>
+
+          <div className='card'>
+            <h3>Projetos extensionistas</h3>
+
+          </div>
+
+          <div className='card'>
+            <h3>Padawan</h3>
+
+          </div>
+
+          <div className='card'>
+            <h3>Hackaton UNICAP</h3>
+
+          </div>
+
+          <div className='card'>
+            <h3>Cursos extras</h3>
+          </div>
+
+          <div className='card'>
+            <h3>BootCamp Magnus NOW!</h3>
+          </div>
+
+          <div className='card'>
+            <h3>Monitoria de Cálculo 1</h3>
           </div>
 
         </div>
@@ -90,8 +152,6 @@ function App() {
         <h2>Projetos</h2>
 
         <div className="cards-container">
-
-          {/* Projeto 1 */}
           <div className="card projeto-card">
 
             <img
