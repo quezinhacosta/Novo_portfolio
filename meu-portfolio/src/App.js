@@ -24,7 +24,8 @@ function App() {
       <section id="home" className="home">
           <div className="home-text">
             <h1>Oi!</h1>
-            <h2>Eu sou Quezia Costa</h2>
+            <h2>Eu sou <br></br>
+            Quezia Costa</h2>
           </div>
 
           <div className="home-image">
@@ -36,21 +37,26 @@ function App() {
       </section>
 
       <section id="sobre" className="section sobre">
-
-        <h2>Sobre Mim</h2>
-
-        <img src="" alt="Foto perfil" className="profile-img"/>
-
-        <ul className="sobre-lista">
-          <li>Cientista da Computação em formação | previsão de formação para 2027.2</li>
-          <li>Estudante de Iniciação Científica</li>
-          <li>Ex-monitora de Cálculo 1</li>
-          <li>Desenvolvedora Web nas horas vagas</li>
-          <li>Palestrante</li>
-          <li>Entusiasta em Ciência de Dados</li>
-        </ul>
-
-      </section>
+          <div className="sobre-container">
+            <div className="sobre-esquerda">
+              <h2>Sobre Mim</h2>
+              <img
+                src="/imagens/foto-minha.jpg"
+                className="profile-img"
+              />
+            </div>
+            <div className="sobre-direita">
+              <ul className="sobre-lista">
+                <li>Cientista da Computação em formação | previsão de formação para 2027.2</li>
+                <li>Estudante de Iniciação Científica</li>
+                <li>Ex-monitora de Cálculo 1</li>
+                <li>Desenvolvedora Web</li>
+                <li>Palestrante</li>
+                <li>Entusiasta em Ciência de Dados</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
       <section id="experiencias" className="section experiencias">
 
