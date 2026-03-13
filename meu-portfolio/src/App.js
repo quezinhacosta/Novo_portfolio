@@ -74,7 +74,7 @@ function App() {
             >
               <img
                 src="/imagens/icons/login.png"
-                alt="voltar"
+                alt="Botão de navegação"
                 className="imagem-botao"
               />
             </button>
@@ -297,72 +297,81 @@ function App() {
             >
               <img src='/imagens/icons/logout.png'
                   className='imagem-botao'
+                  alt="Botão de navegação"
               />
             </button>
 
           </div>
 
         </section>
+        <section id="projetos" className="section-projetos">
 
-      <br> <br></br></br>
+          <h2>Projetos em andamento</h2>
 
-      <section id="projetos" className="section-projetos">
+          <div className="cards-container">
 
-        <h2>Projetos <br></br> em andamento</h2>
+            <div className="card-andamento">
 
-        <div className="cards-container">
-          <div className="card projeto-card">
+              <img
+                src="/imagens/FOTO3.png"
+                alt="Imagem do projeto"
+                className="projeto-img"
+              />
 
-            <img
-              src="/imagens/FOTO3.png"
-              alt="Imagem do projeto"
-              className="projeto-img"
-            />
+              <h3>Padawan ON</h3> <br>
+              </br>
 
-            <h3>Padawan ON</h3> <br></br>
+              <p>
+                Aplicação web criada para auxiliar na organização
+                e automatização de processos dentro do projeto Padawan.
+              </p>
 
-            <p>
-              Aplicação web criada para auxiliar na organização
-              e automatização de processos dentro do projeto Padawan.
-            </p>
+              <p className="tecnologias">
+                Tecnologias: React, JavaScript, HTML, CSS, MySQL, Python
+              </p>
 
-            <p className="tecnologias">
-              Tecnologias: React, JavaScript, HTML, CSS, MYSQL, Python
-            </p>
+              <a
+                href="https://github.com/quezinhacosta/padawan-projeto"
+                target="_blank"
+                rel="noreferrer"
+                className="projeto-link"
+              >
+                Ver Projeto
+              </a>
 
-            <a
-              href="https://github.com/quezinhacosta/padawan-projeto"
-              target="_blank"
-              rel="noreferrer"
-              className="projeto-link"
-            >
-              Ver Projeto
-            </a>
+            </div>
+
+            <div className="card-andamento">
+              <h3>Pig Me Up</h3> <br></br>
+              <p>
+                Aplicação de controle financeiro pessoal para
+                organização de gastos, metas e investimentos.
+              </p>
+              <p className="tecnologias">
+                Tecnologias: Java, Mobile
+              </p>
+              <a
+                href="#"
+                className="projeto-link"
+              >
+                Em desenvolvimento
+              </a>
+            </div>
+
+            <div className="card-andamento">
+              <h3>Terrinha</h3>
+              <p>
+                Aplicativo mobile para android. 
+                Game para auxiliar crianças com dislexia no seu processo de aprendizagem.
+              </p>
+              <p className="tecnologias">
+                Tecnologias: Mobile
+              </p>
+            </div>
 
           </div>
 
-          <div className="card projeto-card">
-            <h3>Pig Me Up</h3>
-            <p>
-              Aplicação de controle financeiro pessoal para
-              organização de gastos, metas e investimentos.
-            </p>
-            <p className="tecnologias">
-              Tecnologias: Java, Mobile
-            </p>
-            <a
-              href=""
-              target="_blank"
-              rel="noreferrer"
-              className="projeto-link"
-            >
-              Ver Projeto
-            </a>
-          </div>
-
-        </div>
-
-      </section>
+        </section>
 
 
       <section id="contato" className="section contato">

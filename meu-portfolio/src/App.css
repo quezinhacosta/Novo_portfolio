@@ -1,9 +1,11 @@
 :root{
   --rosa-bebe:#f5bae1;
-  --preto:#000000;
-  --branco:#ffffff;
-  --cinza-card:#111111;
+  --preto:#000;
+  --branco:#fff;
+  --cinza-card:#111;
 }
+
+/* ================= RESET ================= */
 
 *{
   margin:0;
@@ -11,25 +13,36 @@
   box-sizing:border-box;
 }
 
-/* página */
-
 body{
   background:var(--preto);
   color:var(--branco);
   font-family:Arial, Helvetica, sans-serif;
 }
 
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/* ================= LAYOUT BASE ================= */
 
 .portfolio-container{
   width:100%;
 }
+
+.section{
+  min-height:50vh;
+  padding:120px 40px;
+  text-align:center;
+}
+
+/* ================= NAVBAR ================= */
 
 .navbar{
   position:fixed;
   top:0;
   width:100%;
   height:70px;
-
   background:var(--rosa-bebe);
 
   display:flex;
@@ -63,56 +76,54 @@ body{
   opacity:0.7;
 }
 
-
 .nav-icon{
   width:28px;
   height:28px;
 }
 
-.section{
-  min-height:50vh;
-  padding:120px 40px;
-  text-align:center;
+/* ================= HOME ================= */
+
+.home{
+  background:#040405;
+  min-height:100vh;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+
+  padding-top:70px;
 }
 
-
-.home {
-  background-color:rgb(4, 4, 5);
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+.home-text{
+  width:50%;
+  padding-left:80px;
 }
 
-.home-text {
-  width: 50%;
-  padding-left: 80px;
+.home-text h1{
+  font-size:50px;
+  color:#ffffffc2;
 }
 
-.home-text h1 {
-  font-size: 50px;
-  color: #ffffffc2;
-  
+.home-text h2{
+  font-size:60px;
 }
 
-.home-text h2 {
-  font-size: 60px;
-  color: rgb(255, 255, 255);
-  
-}
-.home-image {
-  width: 50%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+.home-image{
+  width:50%;
+  height:100vh;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  overflow:hidden;
 }
 
-.home-image img {
-  width: 120%;
-  height: 120%;
-  object-fit: cover;
+.home-image img{
+  width:120%;
+  height:120%;
+  object-fit:cover;
 }
 
 /* ================= SOBRE ================= */
@@ -125,16 +136,15 @@ body{
   padding:60px 20px;
 }
 
-.sobre-esquerda h2 {
-  font-size: 70px;
-  font-family: sans-serif;
-}
-
 .sobre-esquerda{
   display:flex;
   flex-direction:column;
   align-items:center;
   text-align:center;
+}
+
+.sobre-esquerda h2{
+  font-size:70px;
 }
 
 .sobre-direita{
@@ -143,7 +153,6 @@ body{
 
 .sobre-lista{
   list-style:none;
-  padding:0;
 }
 
 .sobre-lista li{
@@ -155,26 +164,40 @@ body{
   width:300px;
   height:300px;
   object-fit:cover;
-  border-radius: 10%;
+  border-radius:10%;
   margin-top:20px;
   border:4px solid #eaeaea;
 }
 
-/* ================= CARDS ================= */
+/* ================= EXPERIÊNCIAS ================= */
+
+.section-experiencias{
+  padding:80px 0;
+  text-align:center;
+}
+
+.section-experiencias h2{
+  font-size:40px;
+  margin-bottom:40px;
+}
+
+.carousel{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
 
 .cards-container{
-  margin-top:40px;
-
   display:flex;
   gap:25px;
 
   overflow-x:auto;
   scroll-behavior:smooth;
 
-  padding:10px 40px;
+  padding:10px;
+  width:100%;
 }
 
-/* esconde a barra de scroll */
 .cards-container::-webkit-scrollbar{
   display:none;
 }
@@ -183,21 +206,70 @@ body{
   background:var(--cinza-card);
   padding:25px;
 
-  min-width:280px;
-  max-width:280px;
+  min-width:290px;
+  max-width:290px;
 
   border-radius:10px;
+
   text-align:left;
 
   flex-shrink:0;
+
+  display:flex;
+  flex-direction:column;
+  gap:10px;
 }
 
-.section-experiencias h2{
-  font-size:40px;
-  text-align:center;
+.card h3{
+  font-size:18px;
+}
+
+.card p{
+  font-size:14px;
+  line-height:1.5;
+}
+
+.nav{
+  background:var(--rosa-bebe);
+  border:none;
+
+  width:45px;
+  height:45px;
+
+  border-radius:50%;
+
+  cursor:pointer;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  flex-shrink:0;
+
+  transition:0.2s;
+}
+
+.nav:hover{
+  transform:scale(1.1);
+}
+
+.imagem-botao{
+  width:18px;
 }
 
 /* ================= PROJETOS ================= */
+
+.section-projetos{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+.section-projetos h2{
+  font-size:40px;
+  margin-bottom:40px;
+}
 
 .projeto-img{
   width:100%;
@@ -218,13 +290,20 @@ body{
   font-weight:bold;
 }
 
-.section-projetos h2 {
-  font-size: 40px;
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-}
+.card-andamento{
+  width:280px;
+  min-height:320px;
 
+  padding:25px;
+
+  border-radius:12px;
+
+  display:flex;
+  flex-direction:column;
+
+  background:#111;
+  border:1px solid #ff6ec7;
+}
 
 /* ================= CONTATO ================= */
 
@@ -234,9 +313,11 @@ body{
 
 .social-links{
   margin-top:15px;
+
   display:flex;
   justify-content:center;
   gap:20px;
+
   font-size:14px;
 }
 
@@ -255,10 +336,87 @@ body{
 footer{
   text-align:center;
   padding:30px;
-  background: var(--rosa-bebe);
+  background:var(--rosa-bebe);
   font-size:14px;
 }
 
-footer p {
-  color: var(--preto);
+footer p{
+  color:var(--preto);
+}
+
+/* ================= RESPONSIVIDADE ================= */
+
+/* tablets */
+
+@media (max-width:1024px){
+
+  .home{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .home-text{
+    width:100%;
+    padding:0;
+  }
+
+  .home-image{
+    width:80%;
+    height:auto;
+  }
+
+}
+
+/* celular */
+
+@media (max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    height:auto;
+    padding:15px;
+    gap:10px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+  }
+
+  .sobre-container{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .home-text h1{
+    font-size:36px;
+  }
+
+  .home-text h2{
+    font-size:42px;
+  }
+
+}
+
+/* celulares pequenos */
+
+@media (max-width:480px){
+
+  .section{
+    padding:100px 20px;
+  }
+
+  h1{
+    font-size:28px;
+  }
+
+  h2{
+    font-size:24px;
+  }
+
+  .card{
+    min-width:250px;
+  }
+
 }
