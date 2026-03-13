@@ -5,8 +5,6 @@
   --cinza-card:#111;
 }
 
-/* ================= RESET ================= */
-
 *{
   margin:0;
   padding:0;
@@ -24,8 +22,6 @@ img{
   height:auto;
 }
 
-/* ================= LAYOUT BASE ================= */
-
 .portfolio-container{
   width:100%;
 }
@@ -35,8 +31,6 @@ img{
   padding:120px 40px;
   text-align:center;
 }
-
-/* ================= NAVBAR ================= */
 
 .navbar{
   position:fixed;
@@ -109,22 +103,6 @@ img{
   font-size:60px;
 }
 
-.home-image{
-  width:50%;
-  height:100vh;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  overflow:hidden;
-}
-
-.home-image img{
-  width:120%;
-  height:120%;
-  object-fit:cover;
-}
 
 /* ================= SOBRE ================= */
 

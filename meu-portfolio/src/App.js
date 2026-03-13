@@ -37,13 +37,6 @@ function App() {
           </h2>
         </div>
 
-        <div className="home-image">
-          <img
-            src="/imagens/MINHAFOTO.png"
-            alt="Foto de Quezia Costa"
-          />
-        </div>
-
       </section>
 
       {/* SOBRE */}
