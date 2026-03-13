@@ -67,8 +67,8 @@ function App() {
           <div className="card">
             <h3>Iniciação Científica - Bolsista</h3>
             <p>
-              Pesquisa voltada para desenvolvimento de softwares de auxilio
-              para crianças com dislexia utilizando inteligência artificial.
+              Pesquisa voltada para desenvolvimento de softwares para o auxilio
+              de crianças com dislexia utilizando inteligência artificial.
               O PIBIC conta a leitura e estudo de periodicos, estudo cientifico, produção de artigo de revisão, 
             </p>
           </div>
@@ -78,25 +78,62 @@ function App() {
             <p>
               Organizar o site oficial da igreja batista central do Carpina. O site contou com HTML, CSS, JS e responsividade.
             </p>
+
+            <a
+              href="https://quezinhacosta.github.io/IGREJA_BATISTA_CENTRAL/"
+              target="_blank"
+              rel="noreferrer"
+              className="projeto-link"
+            >
+              Ver Projeto
+            </a>
           </div>
 
           <div className='card'>
             <h3>Estrutura de cados</h3>
             <p>Projeto em C para reforçar manipulação de arquivos e dados acadêmicos.</p>
+            <a
+              href="https://github.com/quezinhacosta/Projeto/blob/main/proj_manipula%C3%A7%C3%A3o.cpp"
+              target="_blank"
+              rel="noreferrer"
+              className="projeto-link"
+            >
+              Ver repositorio
+            </a>
           </div>
 
           <div className='card'>
-            <h3>Layout da página inicial do Google</h3>
+            <h3>Layout da página inicial do Google</h3> <br></br>
             <p>Layout desenvolvido para fins educacionais na semana da computação.</p>
+            
+            <a
+              href="https://quezinhacosta.github.io/Semana-da-computa-o/"
+              target="_blank"
+              rel="noreferrer"
+              className="projeto-link"
+            >
+              Ver projeto
+            </a>
           </div>
 
           <div className='card'>
             <h3>Palestra na semana da computação na UNICAP</h3>
-
+            <img
+              src="/imagens/palestra1.jpeg"
+              alt="Imagem do projeto"
+              className="projeto-img"
+            />
+            <p>A palestra teve como objetivo abordar assuntos do universo de front-end, de forma introdutoria. Com apresentação de projetos reais, explicação de código e exercicio em tempo real. </p>
           </div>
 
           <div className='card'> 
             <h3> Palestra para a comunidade Front-end do Recife</h3>
+            <img
+              src="/imagens/palestra.jpeg"
+              alt="Imagem do projeto"
+              className="projeto-img"
+            />
+            <p>A palestra teve como objetivo abordar assuntos do universo de front-end, de forma introdutoria. Com apresentação de projetos reais, explicação de código e exercicio em tempo real. </p>
 
           </div>
 
