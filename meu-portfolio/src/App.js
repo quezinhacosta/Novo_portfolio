@@ -58,146 +58,268 @@ function App() {
           </div>
         </section>
 
-      <section id="experiencias" className="section experiencias">
+        <section id="experiencias" className="section-experiencias">
 
-        <h2>Experiências e Formação</h2>
+          <h2>
+            Principais <br /> experiências
+          </h2>
 
-        <div className="cards-container">
+          <div className="carousel">
 
-          <div className="card">
-            <h3>Iniciação Científica - Bolsista</h3>
-            <p>
-              Pesquisa voltada para desenvolvimento de softwares para o auxilio
-              de crianças com dislexia utilizando inteligência artificial.
-              O PIBIC conta a leitura e estudo de periodicos, estudo cientifico, produção de artigo de revisão, 
-            </p>
-          </div>
-
-          <div className="card">
-            <h3>Projeto voluntário</h3>
-            <p>
-              Organizar o site oficial da igreja batista central do Carpina. O site contou com HTML, CSS, JS e responsividade.
-            </p>
-
-            <a
-              href="https://quezinhacosta.github.io/IGREJA_BATISTA_CENTRAL/"
-              target="_blank"
-              rel="noreferrer"
-              className="projeto-link"
+            <button
+              className="nav left"
+              onClick={() => {
+                document.getElementById("cards").scrollLeft -= 300;
+              }}
             >
-              Ver Projeto
-            </a>
-          </div>
+              <img
+                src="/imagens/icons/login.png"
+                alt="voltar"
+                className="imagem-botao"
+              />
+            </button>
 
-          <div className='card'>
-            <h3>Estrutura de cados</h3>
-            <p>Projeto em C para reforçar manipulação de arquivos e dados acadêmicos.</p>
-            <a
-              href="https://github.com/quezinhacosta/Projeto/blob/main/proj_manipula%C3%A7%C3%A3o.cpp"
-              target="_blank"
-              rel="noreferrer"
-              className="projeto-link"
+            <div className="cards-container" id="cards">
+
+              <div className="card">
+                <h3>Iniciação Científica - Bolsista</h3>
+                <br />
+                <p>
+                  Pesquisa voltada para desenvolvimento de softwares para o auxílio
+                  de crianças com dislexia utilizando inteligência artificial.
+                  O PIBIC conta com leitura e estudo de periódicos, estudo científico
+                  e produção de artigo de revisão.
+                </p>
+              </div>
+
+              <div className="card">
+                <h3>Projeto voluntário</h3>
+                <br />
+                <p>
+                  Organização do site oficial da Igreja Batista Central do Carpina.
+                  O site contou com HTML, CSS, JavaScript e responsividade.
+                </p>
+
+                <a
+                  href="https://quezinhacosta.github.io/IGREJA_BATISTA_CENTRAL/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="projeto-link"
+                >
+                  Ver Projeto
+                </a>
+              </div>
+
+              <div className="card">
+                <h3>Estrutura de dados</h3>
+                <br />
+                <p>
+                  Projeto em C para reforçar manipulação de arquivos e dados acadêmicos.
+                </p>
+
+                <a
+                  href="https://github.com/quezinhacosta/Projeto/blob/main/proj_manipula%C3%A7%C3%A3o.cpp"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="projeto-link"
+                >
+                  Ver repositório
+                </a>
+              </div>
+
+              <div className="card">
+                <h3>Layout da página inicial do Google</h3>
+                <br />
+                <p>
+                  Layout desenvolvido para fins educacionais na semana da computação.
+                </p>
+
+                <a
+                  href="https://quezinhacosta.github.io/Semana-da-computa-o/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="projeto-link"
+                >
+                  Ver projeto
+                </a>
+              </div>
+
+              <div className="card">
+                <h3>Palestra na Semana da Computação - UNICAP</h3>
+                <br />
+
+                <img
+                  src="/imagens/palestra1.jpeg"
+                  alt="Palestra na UNICAP"
+                  className="projeto-img"
+                />
+
+                <p>
+                  A palestra teve como objetivo abordar assuntos do universo de
+                  front-end de forma introdutória, com apresentação de projetos reais,
+                  explicação de código e exercício em tempo real.
+                </p>
+              </div>
+
+              <div className="card">
+                <h3>Palestra para a comunidade Front-end do Recife</h3>
+                <br />
+
+                <img
+                  src="/imagens/palestra.jpeg"
+                  alt="Palestra Front-end Recife"
+                  className="projeto-img"
+                />
+
+                <p>
+                  Palestra introdutória sobre desenvolvimento front-end com
+                  apresentação de projetos, explicação de código e exercícios práticos.
+                </p>
+              </div>
+
+              <div className="card">
+                <h3>Python / Excel</h3>
+                <br />
+
+                <p>
+                  Aplicação que utiliza Python para análises de palavras originais e
+                  derivadas a partir de comparações.
+                </p>
+
+                <a
+                  href="https://github.com/quezinhacosta/algoritmo-analisador-palavras"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="projeto-link"
+                >
+                  Ver repositório
+                </a>
+              </div>
+
+              <div className="card">
+                <h3>Stonks Viewer</h3>
+                <br />
+
+                <p>
+                  Aplicação web que utiliza Python e React para fornecer análises de
+                  ações baseadas em dados históricos e aprendizado de máquina.
+                </p>
+
+                <a
+                  href="https://github.com/quezinhacosta/stonks-viewer"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="projeto-link"
+                >
+                  Ver repositório
+                </a>
+              </div>
+
+              <div className="card">
+                <h3>Labirinto dos Mistérios</h3>
+                <br />
+
+                <p>
+                  Jogo baseado em labirinto desenvolvido completamente em Java.
+                </p>
+
+                <a
+                  href="https://github.com/quezinhacosta/Sweet-Bomb-"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="projeto-link"
+                >
+                  Ver repositório
+                </a>
+              </div>
+
+              <div className="card">
+                <h3>Padawan</h3>
+                <br />
+
+                <p>
+                  Projeto extensionista da UNICAP voltado para alunos de Ciência da
+                  Computação. Atuei como administradora, sendo responsável pela
+                  organização e funcionamento do projeto.
+                </p>
+              </div>
+
+              <div className="card">
+                <h3>Hackathon UNICAP</h3>
+
+                <img
+                  src="/imagens/fotohack.jpeg"
+                  alt="Hackathon UNICAP"
+                  className="projeto-img"
+                />
+
+                <p>
+                  O hackathon consistiu na análise e resolução de uma problemática
+                  social focada na comunidade de Santo Amaro, em Recife.
+                </p>
+              </div>
+
+              <div className="card">
+                <h3>BootCamp Magnus NOW!</h3>
+                <br />
+
+                <img
+                  src="/imagens/fotoboot.jpeg"
+                  alt="Bootcamp Magnus"
+                  className="projeto-img"
+                />
+
+                <p>
+                  Participei do bootcamp do Programa de Estágio Magnum NOW 2026,
+                  vivenciando desafios técnicos e dinâmicas que fortaleceram minhas
+                  habilidades técnicas e comportamentais.
+                </p>
+              </div>
+
+              <div className="card">
+                <h3>Monitoria de Cálculo 1</h3>
+                <br />
+
+                <p>
+                  A monitoria consistiu em auxiliar alunos de Ciência da Computação
+                  no primeiro período, com foco na resolução de exercícios de
+                  matemática básica, limites, derivação e integral.
+                </p>
+              </div>
+
+            </div>
+
+            <button
+              className="nav right"
+              onClick={() => {
+                document.getElementById("cards").scrollLeft += 300;
+              }}
             >
-              Ver repositorio
-            </a>
-          </div>
-
-          <div className='card'>
-            <h3>Layout da página inicial do Google</h3> <br></br>
-            <p>Layout desenvolvido para fins educacionais na semana da computação.</p>
-            
-            <a
-              href="https://quezinhacosta.github.io/Semana-da-computa-o/"
-              target="_blank"
-              rel="noreferrer"
-              className="projeto-link"
-            >
-              Ver projeto
-            </a>
-          </div>
-
-          <div className='card'>
-            <h3>Palestra na semana da computação na UNICAP</h3>
-            <img
-              src="/imagens/palestra1.jpeg"
-              alt="Imagem do projeto"
-              className="projeto-img"
-            />
-            <p>A palestra teve como objetivo abordar assuntos do universo de front-end, de forma introdutoria. Com apresentação de projetos reais, explicação de código e exercicio em tempo real. </p>
-          </div>
-
-          <div className='card'> 
-            <h3> Palestra para a comunidade Front-end do Recife</h3>
-            <img
-              src="/imagens/palestra.jpeg"
-              alt="Imagem do projeto"
-              className="projeto-img"
-            />
-            <p>A palestra teve como objetivo abordar assuntos do universo de front-end, de forma introdutoria. Com apresentação de projetos reais, explicação de código e exercicio em tempo real. </p>
+              <img src='/imagens/icons/logout.png'
+                  className='imagem-botao'
+              />
+            </button>
 
           </div>
 
-          <div className='card'>
-            <h3>Python/Excel</h3>
-            <p>Aplicação que utiliza Python para análises de palavras originais e derivadas a partir de comparações.</p>
-          </div>
+        </section>
 
-          <div className='card'>
-            <h3>Stonks Viewer</h3>
-            <p>Aplicação web que utiliza Python e React para fornecer análises de ações baseadas em dados históricos e aprendizado de máquina.</p>
-          </div>
+      <br> <br></br></br>
 
-          <div className='card'>
-            <h3>Labirinto dos Mistérios</h3>
-            <p>Jogo feito completamente em Java.</p>
-          </div>
+      <section id="projetos" className="section-projetos">
 
-          <div className='card'>
-            <h3>Projetos extensionistas</h3>
-
-          </div>
-
-          <div className='card'>
-            <h3>Padawan</h3>
-
-          </div>
-
-          <div className='card'>
-            <h3>Hackaton UNICAP</h3>
-
-          </div>
-
-          <div className='card'>
-            <h3>Cursos extras</h3>
-          </div>
-
-          <div className='card'>
-            <h3>BootCamp Magnus NOW!</h3>
-          </div>
-
-          <div className='card'>
-            <h3>Monitoria de Cálculo 1</h3>
-          </div>
-
-        </div>
-
-      </section>
-
-
-      <section id="projetos" className="section projetos">
-
-        <h2>Projetos</h2>
+        <h2>Projetos <br></br> em andamento</h2>
 
         <div className="cards-container">
           <div className="card projeto-card">
 
             <img
-              src=""
+              src="/imagens/FOTO3.png"
               alt="Imagem do projeto"
               className="projeto-img"
             />
 
-            <h3>Padawan ON</h3>
+            <h3>Padawan ON</h3> <br></br>
 
             <p>
               Aplicação web criada para auxiliar na organização
@@ -205,11 +327,11 @@ function App() {
             </p>
 
             <p className="tecnologias">
-              Tecnologias: React, JavaScript, HTML, CSS
+              Tecnologias: React, JavaScript, HTML, CSS, MYSQL, Python
             </p>
 
             <a
-              href=""
+              href="https://github.com/quezinhacosta/padawan-projeto"
               target="_blank"
               rel="noreferrer"
               className="projeto-link"
@@ -220,11 +342,6 @@ function App() {
           </div>
 
           <div className="card projeto-card">
-            <img
-              src=""
-              alt="Imagem do projeto"
-              className="projeto-img"
-            />
             <h3>Pig Me Up</h3>
             <p>
               Aplicação de controle financeiro pessoal para
@@ -250,6 +367,7 @@ function App() {
 
       <section id="contato" className="section contato">
         <h2>Entre em contato</h2>
+
         <div className="social-links">
           <a
             href="https://github.com/quezinhacosta"
@@ -270,9 +388,7 @@ function App() {
           >
             LinkedIn
           </a>
-
         </div>
-
       </section>
 
       <footer>

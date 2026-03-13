@@ -70,7 +70,7 @@ body{
 }
 
 .section{
-  min-height:100vh;
+  min-height:50vh;
   padding:120px 40px;
   text-align:center;
 }
@@ -126,7 +126,7 @@ body{
 }
 
 .sobre-esquerda h2 {
-  font-size: 60px;
+  font-size: 70px;
   font-family: sans-serif;
 }
 
@@ -148,14 +148,14 @@ body{
 
 .sobre-lista li{
   margin-bottom:12px;
-  font-size:18px;
+  font-size:20px;
 }
 
 .profile-img{
   width:300px;
   height:300px;
   object-fit:cover;
-  border-radius:50%;
+  border-radius: 10%;
   margin-top:20px;
   border:4px solid #eaeaea;
 }
@@ -166,18 +166,35 @@ body{
   margin-top:40px;
 
   display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:30px;
+  gap:25px;
+
+  overflow-x:auto;
+  scroll-behavior:smooth;
+
+  padding:10px 40px;
+}
+
+/* esconde a barra de scroll */
+.cards-container::-webkit-scrollbar{
+  display:none;
 }
 
 .card{
   background:var(--cinza-card);
   padding:25px;
-  width:280px;
+
+  min-width:280px;
+  max-width:280px;
 
   border-radius:10px;
   text-align:left;
+
+  flex-shrink:0;
+}
+
+.section-experiencias h2{
+  font-size:40px;
+  text-align:center;
 }
 
 /* ================= PROJETOS ================= */
@@ -201,19 +218,36 @@ body{
   font-weight:bold;
 }
 
+.section-projetos h2 {
+  font-size: 40px;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+
+
 /* ================= CONTATO ================= */
 
-.social-links{
-  margin-top:25px;
+.contato{
+  text-align:center;
+}
 
+.social-links{
+  margin-top:15px;
   display:flex;
   justify-content:center;
-  gap:30px;
+  gap:20px;
+  font-size:14px;
 }
 
 .social-links a{
   color:var(--rosa-bebe);
   text-decoration:none;
+  transition:0.3s;
+}
+
+.social-links a:hover{
+  opacity:0.7;
 }
 
 /* ================= FOOTER ================= */
