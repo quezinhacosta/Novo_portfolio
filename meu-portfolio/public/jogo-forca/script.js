@@ -1,9 +1,29 @@
-const palavraSecreta = "REACT"
-let palavraOculta = ["_", "_", "_", "_", "_"]
-let erros = 0
+const palavras = [
+"REACT","JAVASCRIPT","PYTHON","ALGORITMO","ROSA","COSTA","FLOR",
+"PORTFOLIO","PEDRA","OBJETO","ARRAY","QUERIDO","QUEZIA"
+]
+
+let palavraSecreta
+let palavraOculta
+let erros
+let letrasUsadas
 
 const palavraElemento = document.getElementById("palavra")
-palavraElemento.innerText = palavraOculta.join(" ")
+const errosElemento = document.getElementById("erros")
+const letrasUsadasElemento = document.getElementById("letras-usadas")
+
+function iniciarJogo(){
+
+  palavraSecreta = palavras[Math.floor(Math.random()*palavras.length)]
+  palavraOculta = Array(palavraSecreta.length).fill("_")
+  erros = 0
+  letrasUsadas = []
+
+  palavraElemento.innerText = palavraOculta.join(" ")
+  errosElemento.innerText = "Erros: 0"
+  letrasUsadasElemento.innerText = ""
+
+}
 
 function verificarLetra(){
 
@@ -12,9 +32,16 @@ function verificarLetra(){
 
   input.value = ""
 
+  if(!letra || letrasUsadas.includes(letra)){
+    return
+  }
+
+  letrasUsadas.push(letra)
+  letrasUsadasElemento.innerText = "Letras usadas: " + letrasUsadas.join(", ")
+
   let acertou = false
 
-  for(let i = 0; i < palavraSecreta.length; i++){
+  for(let i=0;i<palavraSecreta.length;i++){
 
     if(palavraSecreta[i] === letra){
 
@@ -28,7 +55,7 @@ function verificarLetra(){
   if(!acertou){
 
     erros++
-    document.getElementById("erros").innerText = "Erros: " + erros
+    errosElemento.innerText = "Erros: " + erros
 
   }
 
@@ -36,7 +63,7 @@ function verificarLetra(){
 
   if(!palavraOculta.includes("_")){
 
-    alert("Você venceu!")
+    alert("Parabéns! Você venceu! A palavra era " + palavraSecreta)
 
   }
 
@@ -47,3 +74,11 @@ function verificarLetra(){
   }
 
 }
+
+function reiniciarJogo(){
+
+  iniciarJogo()
+
+}
+
+iniciarJogo()
